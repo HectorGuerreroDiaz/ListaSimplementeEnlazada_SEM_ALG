@@ -1,0 +1,86 @@
+# depslib dependency file v1.0
+1570763185 source:e:\the dome\tercer semestre\ssp edii\practica 6\alumno.cpp
+	"Alumno.h"
+
+1570762346 e:\the dome\tercer semestre\ssp edii\practica 6\alumno.h
+	<string>
+	<iostream>
+
+1570763986 source:e:\the dome\tercer semestre\ssp edii\practica 6\main.cpp
+	<iostream>
+	<cstring>
+	<fstream>
+	<cstdlib>
+	"Alumno.h"
+	"Lista.h"
+
+1570761608 e:\the dome\tercer semestre\ssp edii\practica 6\lista.h
+	<string>
+	<string.h>
+
+1570759585 source:g:\the dome\tercer semestre\ssp edii\practica 6\alumno.cpp
+	"Alumno.h"
+
+1570758746 g:\the dome\tercer semestre\ssp edii\practica 6\alumno.h
+	<string>
+	<iostream>
+
+1570759506 source:g:\the dome\tercer semestre\ssp edii\practica 6\main.cpp
+	<iostream>
+	<cstring>
+	<fstream>
+	<cstdlib>
+	"Alumno.h"
+	"Lista.h"
+
+1570758008 g:\the dome\tercer semestre\ssp edii\practica 6\lista.h
+	<string>
+	<string.h>
+
+1570767489 source:e:\users\crawn89\downloads\practica 6\alumno.cpp
+	"Alumno.h"
+
+1570762346 e:\users\crawn89\downloads\practica 6\alumno.h
+	<string>
+	<iostream>
+
+1570770609 source:e:\users\crawn89\downloads\practica 6\main.cpp
+	<iostream>
+	<cstring>
+	<fstream>
+	<cstdlib>
+	"Alumno.h"
+	"Lista.h"
+
+1570770104 e:\users\crawn89\downloads\practica 6\lista.h
+	<string>
+	<string.h>
+
+1599873964 source:c:\users\crawn89\downloads\practica 6 funcional\practica 6\alumno.cpp
+	"Alumno.h"
+
+1599873957 c:\users\crawn89\downloads\practica 6 funcional\practica 6\alumno.h
+	<string>
+	<iostream>
+
+1599961089 source:c:\users\crawn89\downloads\practica 6 funcional\practica 6\main.cpp
+	<iostream>
+	<cstring>
+	<fstream>
+	<cstdlib>
+	<string>
+	"Paquete.h"
+	"Lista.h"
+
+1599960835 c:\users\crawn89\downloads\practica 6 funcional\practica 6\lista.h
+	<string>
+	<string.h>
+	<iostream>
+
+1599873957 c:\users\crawn89\downloads\practica 6 funcional\practica 6\paquete.h
+	<string>
+	<iostream>
+
+1599961599 source:c:\users\crawn89\downloads\practica 6 funcional\practica 6\paquete.cpp
+	"Paquete.h"
+

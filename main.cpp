@@ -35,12 +35,10 @@ int main()
         if(miPaquete.getId() != "\0" and miPaquete.getId() != "" and miPaquete.getId() != "\n")
         {
             miLista.insertAtStart(miPaquete);
-            caracter = miPaquete.getId();
+            NumPaquetes++;
         }
     }
 
-    NumPaquetes = atoi(caracter.c_str());
-    NumPaquetes++;
 
     do
     {

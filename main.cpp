@@ -14,7 +14,7 @@ int main()
     List<Paquete> miLista;
     Paquete miPaquete;
 
-    string caracter, cosas;
+    string caracter, cosas, CambiosGuardados;
     int longitud;
     int NumPaquetes=0;
 
@@ -39,7 +39,7 @@ int main()
         }
     }
 
-
+    CambiosGuardados = '1';
     do
     {
         cout << "Menu - Lista Simplemente Ligada" << endl;
@@ -47,7 +47,8 @@ int main()
         cout << "2. Mostrar todos los paquetes" << endl;
         cout << "3. Ordenar por peso" << endl;
         cout << "4. Ordenar por origen" << endl;
-        cout << "5. Salir" << endl;
+        cout << "5. Guardar Cambios" << endl;
+        cout << "6. Salir"<<endl;
         cout << "Elige tu opcion: ";
         cin.sync();
         cin >> opc;
@@ -82,7 +83,7 @@ int main()
                 miPaquete.setDestination(caracter);
 
                 miLista.insertAtStart(miPaquete);
-
+                CambiosGuardados = '0';
                 cout << endl << " Paquete registrado exitosamente: " << endl << endl;
             break;
             case '2':
@@ -120,15 +121,36 @@ int main()
                 cout << endl << endl;
             break;
             case '5':
-                cout << "Gracias por usar este software:D" << endl << endl;
                 archAlumnos.clear();
                 archAlumnos.seekp(ios::beg);
                 archAlumnos << miLista.toString();
+                CambiosGuardados = '1';
+            break;
+            case '6':
+                if(atoi(CambiosGuardados.c_str()) == 1){
+                    cout << "Gracias por usar este software!" << endl << endl;
+                }else{
+                    cosas = '0';
+                    do{
+                        cout << "No se han guardado los cambios, quiere salir igualmente?\n 1-Si\n 2-No\n";
+                        cin >> opc;
+                        if(opc == '1'){
+                            cout<<"Gracias por usar este software!\n";
+                            opc = '6';
+                        }else if(opc == '2'){
+                            cout<<"Volviendo al menu...\n";
+                            opc = '7';
+                        }else{
+                            cout<<"Opcion no reconocida!\n";
+                            cosas = '1';
+                        }
+                    }while(atoi(cosas.c_str()) == 1);
+                }
             break;
 
         }
 
-    }while(opc != '5');
+    }while(opc != '6');
     archAlumnos.close();
     return 0;
 }

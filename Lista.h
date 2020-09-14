@@ -285,7 +285,7 @@ void List<T>::orderByWeight()
         Nodo* aux1(aux->getNext());
         while(aux1 != nullptr)
         {
-            if(atoi(aux->getData().getWeight().c_str()) > atoi(aux1->getData().getWeight().c_str()))
+            if(atoi(aux->getData().getWeight().c_str()) < atoi(aux1->getData().getWeight().c_str()))
             {
                 auxDato = aux1->getData();
                 aux1->setData(aux->getData());
